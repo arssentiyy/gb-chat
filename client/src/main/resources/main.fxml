@@ -10,8 +10,8 @@
             fx:controller="Controller" prefHeight="400.0" prefWidth="600.0">
     <HBox fx:id="authPanel">
         <TextField HBox.hgrow="ALWAYS" fx:id="loginField" promptText="Логин"/>
-        <PasswordField HBox.hgrow="ALWAYS" fx:id="passwordField" promptText="Пароль"/>
+        <PasswordField HBox.hgrow="ALWAYS" fx:id="passwordField" promptText="Пароль" onAction="#sendAuth"/>
+        <Button HBox.hgrow="ALWAYS" onAction="#sendAuth" text="Подключиться"/>
     </HBox>
-
 
 </VBox>
